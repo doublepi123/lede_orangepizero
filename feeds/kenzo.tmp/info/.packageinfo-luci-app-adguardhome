@@ -1,0 +1,21 @@
+Source-Makefile: feeds/kenzo/luci-app-adguardhome/Makefile
+
+Package: luci-app-adguardhome
+Submenu: 3. Applications
+Version: 1.8-12
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +!wget&&!curl:wget
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI app for adguardhome
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	LuCI support for adguardhome
+
+@@
+
+

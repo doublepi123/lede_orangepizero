@@ -1,0 +1,21 @@
+Source-Makefile: feeds/kenzo/adguardhome/Makefile
+
+Package: AdGuardHome
+Version: v0.101.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Network-wide ads & trackers blocking DNS server
+Maintainer: 
+Source: AdGuardHome_linux_.tar.gz
+Type: ipkg
+Description: Network-wide ads & trackers blocking DNS server
+https://github.com/AdguardTeam/AdGuardHome
+
+@@
+
+

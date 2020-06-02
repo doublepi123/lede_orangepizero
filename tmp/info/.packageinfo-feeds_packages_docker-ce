@@ -1,0 +1,34 @@
+Source-Makefile: package/feeds/packages/docker-ce/Makefile
+OK: Expected ../containerd/Makefile source version '7ad184331fa3e55e52b890ea95e65ba581ae3429', found '7ad184331fa3e55e52b890ea95e65ba581ae3429'
+OK: Expected ../libnetwork/Makefile source version '9fd385be8302dbe1071a3ce124891893ff27f90f', found '9fd385be8302dbe1071a3ce124891893ff27f90f'
+OK: Expected ../runc/Makefile source version 'dc9208a3303feef5b3839f4323d9beb36df0a9dd', found 'dc9208a3303feef5b3839f4323d9beb36df0a9dd'
+OK: Expected ../tini/Makefile source version 'fec3683b971d9c3ef73f284f176672c44b448662', found 'fec3683b971d9c3ef73f284f176672c44b448662'
+Build-Depends: golang/host
+
+Package: docker-ce
+Menu: 1
+Version: 19.03.8-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) @(aarch64||arm||x86_64) +btrfs-progs +ca-certificates +cgroupfs-mount +containerd +libdevmapper +libnetwork +tini +DOCKER_SECCOMP:libseccomp +iptables-mod-extra +kmod-br-netfilter +kmod-ikconfig +kmod-nf-conntrack-netlink +kmod-nf-ipvs +kmod-veth
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: packages
+Title: Docker Community Edition
+Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
+Require-User: docker:docker
+Source: docker-ce-19.03.8.tar.gz
+License: Apache-2.0
+LicenseFiles: components/cli/LICENSE components/engine/LICENSE
+Type: ipkg
+Description:   Docker Engine is used by millions enables containerized applications
+  to run anywhere consistently on any infrastructure.
+https://www.docker.com/
+Gerard Ryan <G.M0N3Y.2503@gmail.com>
+@@
+Config:
+  source "feeds/packages/utils/docker-ce/Config.in"
+@@
+
+

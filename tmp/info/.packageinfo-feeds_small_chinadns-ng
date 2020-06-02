@@ -1,0 +1,23 @@
+Source-Makefile: package/feeds/small/chinadns-ng/Makefile
+
+Package: chinadns-ng
+Version: 1.0-beta.22-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ipset
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: small
+Title: ChinaDNS next generation, refactoring with epoll and ipset
+Maintainer: pexcn <i@pexcn.me>
+Source: chinadns-ng-1.0-beta.22-90e9f263fa6b4954d52dfa2f36948968269bc73b.tar.gz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: ChinaDNS next generation, refactoring with epoll and ipset.
+https://github.com/zfl9/chinadns-ng
+pexcn <i@pexcn.me>
+@@
+
+

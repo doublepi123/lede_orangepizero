@@ -1,0 +1,28 @@
+Source-Makefile: package/lean/mt/drivers/wifi-l1profile/Makefile
+
+Package: wifi-l1profile
+Menu: 1
+Submenu: Wireless Drivers
+Version: 1-r2563-d42b563e
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: Kernel modules
+Category: Kernel modules
+Repository: base
+Title: Build WiFi l1profile.data on demand.
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description:   This package helps to build l1profile on demand.
+
+@@
+Config:
+	if PACKAGE_wifi-l1profile
+	source "package/lean/mt/drivers/wifi-l1profile/l1profile.config.in"
+	endif
+@@
+
+

@@ -1,0 +1,21 @@
+Source-Makefile: package/kernel/xradio/Makefile
+
+Package: kmod-xradio
+Submenu: Wireless Drivers Test-xr819
+Version: <LINUX_VERSION>-1
+Depends: @TARGET_sunxi +kmod-mac80211 +wpad-mini
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Xradio xr819 test wifi-drivers support
+Maintainer: 
+Source: 
+License: GPLv2
+Type: ipkg
+Description: Xradio xr819 test wifi-drivers support
+
+@@
+
+

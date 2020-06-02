@@ -1,0 +1,41 @@
+Source-Makefile: feeds/kenzo/luci-app-smartdns/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-smartdns
+Submenu: 3. Applications
+Version: 1-3
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +smartdns
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Luci for smartdns server
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Luci for smartdns server
+
+@@
+
+Package: luci-i18n-smartdns-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1-3
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-smartdns
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-smartdns - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-smartdns - 简体中文 (Simplified Chinese)
+
+@@
+
+

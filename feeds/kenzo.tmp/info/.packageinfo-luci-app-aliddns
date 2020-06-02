@@ -1,0 +1,45 @@
+Source-Makefile: feeds/kenzo/luci-app-aliddns/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-aliddns
+Submenu: 3. Applications
+Version: 0.3.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +openssl-util +curl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for aliddns
+Maintainer: chenhw2 <https://github.com/chenhw2/>
+Source: 
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:    LuCI Support for ALiDDNS.
+chenhw2 <https://github.com/chenhw2/>
+@@
+
+Package: luci-i18n-aliddns-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 0.3.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-aliddns
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-aliddns - zh-cn translation
+Maintainer: chenhw2 <https://github.com/chenhw2/>
+Source: 
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-aliddns - 简体中文 (Simplified Chinese)
+chenhw2 <https://github.com/chenhw2/>
+@@
+
+

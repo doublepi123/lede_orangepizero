@@ -1,0 +1,86 @@
+Source-Makefile: target/linux/ar7/Makefile
+Target: ar7
+Target-Board: ar7
+Target-Name: TI AR7
+Target-Arch: mipsel
+Target-Arch-Packages: mipsel_mips32
+Target-Features: atm gpio low_mem squashfs
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
+CPU-Type: mips32
+Linux-Version: 4.9.223
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for TI AR7 based routers.
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod dnsmasq-full iptables ppp ppp-mod-pppoe firewall kmod-ipt-offload kmod-tcp-bbr swconfig 
+Target: ar7/generic
+Target-Board: ar7
+Target-Name: Texas Instruments AR7 boards
+Target-Arch: mipsel
+Target-Arch-Packages: mipsel_mips32
+Target-Features: atm gpio low_mem squashfs
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
+CPU-Type: mips32
+Linux-Version: 4.9.223
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for TI AR7 based routers.
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod kmod-mac80211 kmod-acx-mac80211 wpad-basic dnsmasq-full iptables ppp ppp-mod-pppoe firewall kmod-ipt-offload kmod-tcp-bbr swconfig iwinfo
+Target-Profile: Annex-A
+Target-Profile-Name: Annex-A DSL firmware (default)
+Target-Profile-Packages: kmod-pppoa ppp-mod-pppoa linux-atm atm-tools br2684ctl kmod-sangam-atm-annex-a iwinfo
+Target-Profile-Description:
+	Package set compatible with Annex-A DSL lines (most countries).
+@@
+
+Target-Profile: Annex-B
+Target-Profile-Name: Annex-B DSL firmware
+Target-Profile-Packages: kmod-pppoa ppp-mod-pppoa linux-atm atm-tools br2684ctl kmod-sangam-atm-annex-b iwinfo
+Target-Profile-Description:
+	Package set compatible with Annex-B DSL lines (Germany).
+@@
+
+Target-Profile: Texas
+Target-Profile-Name: Texas Instruments WiFi (mac80211)
+Target-Profile-Packages: kmod-acx-mac80211 iwinfo
+Target-Profile-Description:
+	Package set compatible with hardware using Texas Instruments WiFi cards
+	using the mac80211 driver.
+@@
+
+Target-Profile: None
+Target-Profile-Name: No WiFi
+Target-Profile-Packages:  iwinfo
+Target-Profile-Description:
+	Package set without WiFi support
+@@
+
+Target: ar7/ac49x
+Target-Board: ar7
+Target-Name: AudioCodes AC49x
+Target-Arch: mipsel
+Target-Arch-Packages: mipsel_mips32
+Target-Features: atm gpio low_mem squashfs
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
+CPU-Type: mips32
+Linux-Version: 4.9.223
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for AudioCodes AC49x based routers.
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw wget libustream-openssl ca-certificates default-settings luci luci-app-ddns luci-app-upnp luci-app-adbyby-plus luci-app-autoreboot luci-app-filetransfer luci-app-vsftpd luci-app-ssr-plus luci-app-unblockmusic luci-app-arpbind luci-app-vlmcsd luci-app-wol luci-app-ramfree luci-app-sfe luci-app-flowoffload luci-app-nlbwmon luci-app-accesscontrol luci-app-cpufreq ddns-scripts_aliyun ddns-scripts_dnspod dnsmasq-full iptables ppp ppp-mod-pppoe firewall kmod-ipt-offload kmod-tcp-bbr swconfig 
+Target-Profile: None
+Target-Profile-Name: No WiFi
+Target-Profile-Packages:  
+Target-Profile-Description:
+	Package set without WiFi support
+@@
+
+

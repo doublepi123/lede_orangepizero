@@ -1,0 +1,77 @@
+Source-Makefile: feeds/packages/libs/libsearpc/Makefile
+Build-Depends: !BUILD_NLS:libiconv !BUILD_NLS:gettext
+
+Package: libsearpc
+Version: 3.2.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2 +jansson +BUILD_NLS:libiconv-full
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Seafile RPC Library
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: libsearpc-3.2.0.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE.txt
+Type: ipkg
+Description:   Searpc is a simple C language RPC framework based on GObject system.
+  Searpc handles the serialization/deserialization part of RPC, the
+  transport part is left to users.
+https://seafile.com
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-searpc
+Submenu: Python
+Version: 3.2.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsearpc +python3-light +python3-logging
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: python3
+Section: lang
+Category: Languages
+Repository: base
+Title: Python bindings for Searpc
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: libsearpc-3.2.0.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE.txt
+Type: ipkg
+Description:   Searpc is a simple C language RPC framework based on GObject system.
+  Searpc handles the serialization/deserialization part of RPC, the
+  transport part is left to users.
+
+  This package contains the Python bindings for Searpc.
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-searpc-src
+Submenu: Python
+Version: 3.2.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: python3
+Section: lang
+Category: Languages
+Repository: base
+Title: Python bindings for Searpc (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: libsearpc-3.2.0.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE.txt
+Type: ipkg
+Description:       Searpc is a simple C language RPC framework based on GObject system.
+  Searpc handles the serialization/deserialization part of RPC, the
+  transport part is left to users.
+
+  This package contains the Python bindings for Searpc..
+    (Contains the Python3 sources for this package).
+Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+
+

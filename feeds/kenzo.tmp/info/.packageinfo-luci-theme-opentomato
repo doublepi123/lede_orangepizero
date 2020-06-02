@@ -1,0 +1,22 @@
+Source-Makefile: feeds/kenzo/luci-theme-opentomato/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-theme-opentomato
+Submenu: 4. Themes
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: OpenTomato new kenzo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: OpenTomato new kenzo
+
+@@
+
+

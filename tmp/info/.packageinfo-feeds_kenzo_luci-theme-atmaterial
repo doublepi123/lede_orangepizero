@@ -1,0 +1,22 @@
+Source-Makefile: package/feeds/kenzo/luci-theme-atmaterial/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-theme-atmaterial
+Submenu: 4. Themes
+Version: 1.2-02-20200209
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: kenzo
+Title: Atmaterial new by kenzo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Atmaterial new by kenzo
+
+@@
+
+

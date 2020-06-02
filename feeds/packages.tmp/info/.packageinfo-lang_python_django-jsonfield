@@ -1,0 +1,101 @@
+Source-Makefile: feeds/packages/lang/python/django-jsonfield/Makefile
+
+Package: python-django-jsonfield
+Submenu: Python
+Version: 2.1.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_python-django-jsonfield:python python-django1 +PACKAGE_python-django-jsonfield:python-six
+Conflicts: 
+Menu-Depends: python-django1
+Provides: 
+Build-Variant: python
+Section: lang
+Category: Languages
+Repository: base
+Title: A reusable Django field to store validated JSON in models
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: jsonfield-2.1.1.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   jsonfield is a reusable model field that allows you to store validated
+  JSON, automatically handling serialization to and from the database.
+https://github.com/rpkilby/jsonfield
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+Package: python-django-jsonfield-src
+Submenu: Python
+Version: 2.1.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: python-django1
+Provides: 
+Build-Variant: python
+Section: lang
+Category: Languages
+Repository: base
+Title: A reusable Django field to store validated JSON in models (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: jsonfield-2.1.1.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:       jsonfield is a reusable model field that allows you to store validated
+  JSON, automatically handling serialization to and from the database..
+    (Contains the Python sources for this package).
+https://github.com/rpkilby/jsonfield
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+Package: python3-django-jsonfield
+Submenu: Python
+Version: 2.1.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_python3-django-jsonfield:python3 +PACKAGE_python3-django-jsonfield:python3-django1 +PACKAGE_python3-django-jsonfield:python3-six
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: python3
+Section: lang
+Category: Languages
+Repository: base
+Title: A reusable Django field to store validated JSON in models
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: jsonfield-2.1.1.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   jsonfield is a reusable model field that allows you to store validated
+  JSON, automatically handling serialization to and from the database.
+.
+(Variant for Python3)
+https://github.com/rpkilby/jsonfield
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+Package: python3-django-jsonfield-src
+Submenu: Python
+Version: 2.1.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: python3
+Section: lang
+Category: Languages
+Repository: base
+Title: A reusable Django field to store validated JSON in models (sources)
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: jsonfield-2.1.1.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:       jsonfield is a reusable model field that allows you to store validated
+  JSON, automatically handling serialization to and from the database.
+.
+(Variant for Python3).
+    (Contains the Python3 sources for this package).
+https://github.com/rpkilby/jsonfield
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+

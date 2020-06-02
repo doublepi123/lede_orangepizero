@@ -1,0 +1,41 @@
+Source-Makefile: feeds/kenzo/luci-app-gost/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-gost
+Submenu: 3. Applications
+Version: 1.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +gost
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for Gost
+Maintainer: [CTCGFW]Project-OpenWrt
+Source: 
+Type: ipkg
+Description: LuCI support for Gost
+[CTCGFW]Project-OpenWrt
+@@
+
+Package: luci-i18n-gost-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-gost
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-gost - zh-cn translation
+Maintainer: [CTCGFW]Project-OpenWrt
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-gost - 简体中文 (Simplified Chinese)
+[CTCGFW]Project-OpenWrt
+@@
+
+

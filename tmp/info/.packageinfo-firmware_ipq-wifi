@@ -1,0 +1,135 @@
+Source-Makefile: package/firmware/ipq-wifi/Makefile
+
+Package: ipq-wifi-engenius_eap1300
+Submenu: ath10k IPQ4019 Boarddata
+Version: 1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Board for EnGenius EAP1300
+Maintainer: 
+Source: 
+Type: ipkg
+Description: This device custom package board-2.bin overwrites the board-2.bin
+file which is supplied by the ath10k-firmware-qca4019 package.
+
+This is package is only necessary for the EnGenius EAP1300.
+Don't install it for any other device!
+
+@@
+
+Package: ipq-wifi-hugo_ac1200
+Submenu: ath10k IPQ4019 Boarddata
+Version: 1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
+Conflicts: ipq-wifi-engenius_eap1300
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Board for Hugo AC1200
+Maintainer: 
+Source: 
+Type: ipkg
+Description: This device custom package board-2.bin overwrites the board-2.bin
+file which is supplied by the ath10k-firmware-qca4019 package.
+
+This is package is only necessary for the Hugo AC1200.
+Don't install it for any other device!
+
+@@
+
+Package: ipq-wifi-linksys_ea6350v3
+Submenu: ath10k IPQ4019 Boarddata
+Version: 1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
+Conflicts: ipq-wifi-engenius_eap1300 ipq-wifi-hugo_ac1200
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Board for Linksys EA6350v3
+Maintainer: 
+Source: 
+Type: ipkg
+Description: This device custom package board-2.bin overwrites the board-2.bin
+file which is supplied by the ath10k-firmware-qca4019 package.
+
+This is package is only necessary for the Linksys EA6350v3.
+Don't install it for any other device!
+
+@@
+
+Package: ipq-wifi-mobipromo_cm520-79f
+Submenu: ath10k IPQ4019 Boarddata
+Version: 1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
+Conflicts: ipq-wifi-engenius_eap1300 ipq-wifi-hugo_ac1200 ipq-wifi-linksys_ea6350v3
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Board for MobiPromo CM520-79F
+Maintainer: 
+Source: 
+Type: ipkg
+Description: This device custom package board-2.bin overwrites the board-2.bin
+file which is supplied by the ath10k-firmware-qca4019 package.
+
+This is package is only necessary for the MobiPromo CM520-79F.
+Don't install it for any other device!
+
+@@
+
+Package: ipq-wifi-p2w_r619ac
+Submenu: ath10k IPQ4019 Boarddata
+Version: 1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
+Conflicts: ipq-wifi-engenius_eap1300 ipq-wifi-hugo_ac1200 ipq-wifi-linksys_ea6350v3 ipq-wifi-mobipromo_cm520-79f
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Board for P&W R619AC
+Maintainer: 
+Source: 
+Type: ipkg
+Description: This device custom package board-2.bin overwrites the board-2.bin
+file which is supplied by the ath10k-firmware-qca4019 package.
+
+This is package is only necessary for the P&W R619AC.
+Don't install it for any other device!
+
+@@
+
+Package: ipq-wifi-rt-acrh17
+Submenu: ath10k IPQ4019 Boarddata
+Version: 1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq40xx
+Conflicts: ipq-wifi-engenius_eap1300 ipq-wifi-hugo_ac1200 ipq-wifi-linksys_ea6350v3 ipq-wifi-mobipromo_cm520-79f ipq-wifi-p2w_r619ac
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Board for ASUS RT-ACRH17/RT-AC82U/RT-AC42U
+Maintainer: 
+Source: 
+Type: ipkg
+Description: This device custom package board-2.bin overwrites the board-2.bin
+file which is supplied by the ath10k-firmware-qca4019 package.
+
+This is package is only necessary for the ASUS RT-ACRH17/RT-AC82U/RT-AC42U.
+Don't install it for any other device!
+
+@@
+
+

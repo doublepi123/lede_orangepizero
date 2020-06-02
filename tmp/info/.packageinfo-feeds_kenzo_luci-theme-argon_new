@@ -1,0 +1,22 @@
+Source-Makefile: package/feeds/kenzo/luci-theme-argon_new/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-theme-argon_new
+Submenu: 4. Themes
+Version: 1.5.2-01-2020401
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: kenzo
+Title: Argon new kenzo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Argon new kenzo
+
+@@
+
+

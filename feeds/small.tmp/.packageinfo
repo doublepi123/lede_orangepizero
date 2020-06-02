@@ -1,0 +1,259 @@
+Source-Makefile: feeds/small/brook/Makefile
+
+Package: brook
+Version: 20200502-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Brook is a cross-platform proxy software
+Maintainer: 
+Source: brook
+Type: ipkg
+Description:   Brook is a cross-platform proxy software
+https://github.com/txthinking/brook
+
+@@
+
+
+Source-Makefile: feeds/small/chinadns-ng/Makefile
+
+Package: chinadns-ng
+Version: 1.0-beta.22-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ipset
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: ChinaDNS next generation, refactoring with epoll and ipset
+Maintainer: pexcn <i@pexcn.me>
+Source: chinadns-ng-1.0-beta.22-90e9f263fa6b4954d52dfa2f36948968269bc73b.tar.gz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: ChinaDNS next generation, refactoring with epoll and ipset.
+https://github.com/zfl9/chinadns-ng
+pexcn <i@pexcn.me>
+@@
+
+
+Source-Makefile: feeds/small/dns2socks/Makefile
+
+Package: dns2socks
+Submenu: IP Addresses and Names
+Version: 2.1-20200218
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: The utility to resolve DNS requests via a SOCKS5 tunnel.
+Maintainer: ghostmaker
+Source: SourceCode.zip
+License: BSD-3-Clause
+Type: ipkg
+Description:   This is a utility to resolve DNS requests via a SOCKS5 tunnel and caches the answers.
+http://dns2socks.sourceforge.net/
+ghostmaker
+@@
+
+
+Source-Makefile: feeds/small/ipt2socks/Makefile
+
+Package: ipt2socks
+Version: 1.1.2-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5
+Maintainer: 
+Source: ipt2socks-1.1.2-cfbc2189356aba7fcafb0bc961a95419f313d8a7.tar.gz
+Type: ipkg
+Description: Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5.
+https://github.com/zfl9/ipt2socks
+
+@@
+
+
+Source-Makefile: feeds/small/kcptun/Makefile
+Build-Depends: golang/host
+
+Package: kcptun-client
+Submenu: Web Servers/Proxies
+Version: 20200409-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Simple UDP Tunnel Based On KCP (client)
+Maintainer: Xingwang Liao <kuoruan@gmail.com>
+Source: kcptun-20200409.tar.gz
+License: MIT
+LicenseFiles: LICENSE.md
+Type: ipkg
+Description:   A Stable & Secure Tunnel Based On KCP with N:M Multiplexing.
+
+  This package contains the kcptun client.
+https://github.com/xtaci/kcptun
+Xingwang Liao <kuoruan@gmail.com>
+@@
+
+Package: kcptun-server
+Submenu: Web Servers/Proxies
+Version: 20200409-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Simple UDP Tunnel Based On KCP (server)
+Maintainer: Xingwang Liao <kuoruan@gmail.com>
+Source: kcptun-20200409.tar.gz
+License: MIT
+LicenseFiles: LICENSE.md
+Type: ipkg
+Description:   A Stable & Secure Tunnel Based On KCP with N:M Multiplexing.
+
+  This package contains the kcptun server.
+https://github.com/xtaci/kcptun
+Xingwang Liao <kuoruan@gmail.com>
+@@
+
+
+Source-Makefile: feeds/small/pdnsd-alt/Makefile
+
+Package: pdnsd-alt
+Submenu: Web Servers/Proxies
+Version: 1.2.9b-par-a8e46ccba7b0fa2230d6c42ab6dcd92926f6c21d
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Proxy DNS Server
+Maintainer: 
+Source: pdnsd-1.2.9b-par-a8e46ccba7b0fa2230d6c42ab6dcd92926f6c21d.tar.gz
+Type: ipkg
+Description:   pdnsd, is an IPv6 capable proxy DNS server with permanent caching (the cache
+  contents are written to hard disk on exit) that is designed to cope with
+  unreachable or down DNS servers (for example in dial-in networking).
+
+  pdnsd can be used with applications that do dns lookups, eg on startup, and
+  can't be configured to change that behaviour, to prevent the often
+  minute-long hangs (or even crashes) that result from stalled dns queries.
+
+@@
+
+
+Source-Makefile: feeds/small/simple-obfs/Makefile
+Build-Depends: libev
+
+Package: simple-obfs
+Version: 0.0.5-4
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +!SIMPLE_OBFS_STATIC_LINK:libev
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Simple-obfs
+Maintainer: Jian Chang <aa65535@live.com>
+Source: simple-obfs-0.0.5-486bebd9208539058e57e23a12f23103016e09b4.tar.gz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+https://github.com/shadowsocks/simple-obfs
+Jian Chang <aa65535@live.com>
+@@
+
+Package: simple-obfs-server
+Version: 0.0.5-4
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +!SIMPLE_OBFS_STATIC_LINK:libev
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Simple-obfs
+Maintainer: Jian Chang <aa65535@live.com>
+Source: simple-obfs-0.0.5-486bebd9208539058e57e23a12f23103016e09b4.tar.gz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+https://github.com/shadowsocks/simple-obfs
+Jian Chang <aa65535@live.com>
+@@
+Config:
+menu "Simple-obfs Compile Configuration"
+	depends on PACKAGE_simple-obfs || PACKAGE_simple-obfs-server
+	config SIMPLE_OBFS_STATIC_LINK
+		bool "enable static link libraries."
+		default n
+endmenu
+@@
+
+
+Source-Makefile: feeds/small/tcping/Makefile
+
+Package: tcping
+Version: 0.1-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: tcping measures the latency of a tcp-connection
+Maintainer: 
+Source: tcping-0.1-79ef6f85d7147d33d0835fac060618ab136503c8.tar.gz
+Type: ipkg
+Description: tcping measures the latency of a tcp-connection
+https://github.com/jlyo/tcping
+
+@@
+
+
+Source-Makefile: feeds/small/v2ray-plugin/Makefile
+
+Package: v2ray-plugin
+Version: 1.3.0-20200205
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: SIP003 plugin for shadowsocks, based on v2ray
+Maintainer: chenhw2 <https://github.com/chenhw2>
+Source: v2ray-plugin-linux--v1.3.0.tar.gz
+Type: ipkg
+Description: 	Yet another SIP003 plugin for shadowsocks, based on v2ray
+https://github.com/shadowsocks/v2ray-plugin
+chenhw2 <https://github.com/chenhw2>
+@@
+
+

@@ -1,0 +1,22 @@
+Source-Makefile: package/feeds/kenzo/luci-theme-opentomcat/Makefile
+
+Package: luci-theme-opentomcat
+Submenu: 4. Themes
+Version: 0.2.50-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: kenzo
+Title: Tomato new kenzo
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Tomato new kenzo
+http://wcan.in/
+
+@@
+
+
