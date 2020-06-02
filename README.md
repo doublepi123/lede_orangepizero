@@ -1,3 +1,5 @@
+**基于leans的源码（20200602）为orangepi zero添加某些加速插件并且添加内置无线网卡驱动后的源码**
+
 欢迎来到Lean的Openwrt源码仓库！
 =
 Welcome to Lean's  git source of OpenWrt and packages
